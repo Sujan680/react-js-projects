@@ -1,7 +1,11 @@
+import Todo from "./components/Todo";
+
 export default function App() {
   return (
-    <h1 className="text-3xl text-center font-bold underline">
-      Hello world!
-    </h1>
+
+    <div className="bg-stone-900 grid min-h-screen py-4">
+      <Todo />
+    </div>
+
   )
 }
