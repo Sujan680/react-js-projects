@@ -6,6 +6,16 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper button{
+    background-color: #614101;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
 }
 
 .accordian{
@@ -24,8 +34,14 @@
     color: #fff;
     cursor: pointer;
 }
+.title span{
+    font-size: 20px;
+    font-weight: 900;
+}
 
 .content{
-    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff9d;
     height: auto;
 }
