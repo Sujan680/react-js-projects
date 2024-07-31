@@ -3,7 +3,8 @@ import todo_icon from '../assets/todo_icon.png';
 import TodoItems from './TodoItems';
 const Todo = () => {
 
-    const [todoList, setTodoList] = useState(localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []);
+    const [todoList, setTodoList] = useState(localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []); // here it is done this to store and getitem from the localstorage 
+
 
     const inputRef = useRef();
 
@@ -25,6 +26,7 @@ const Todo = () => {
         })
     }
 
+    // this logic will toggle tick and not_tick button
     const toggle = (id) => {
         setTodoList((prevTodo) => {
             return prevTodo.map((todo) => {
@@ -35,7 +37,6 @@ const Todo = () => {
             })
         })
     }
-
 
     useEffect(() => {
         localStorage.setItem("todos", JSON.stringify(todoList) )
