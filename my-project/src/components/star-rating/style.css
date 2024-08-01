@@ -1,0 +1,16 @@
+.star-rating{
+    background-color: blueviolet;
+    padding: 40px;
+    min-height: 90vh;
+    min-width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.active {
+    color: #fff700;
+}
+
+.inactive{
+    color: black;
+}
