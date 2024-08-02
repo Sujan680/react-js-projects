@@ -9,6 +9,7 @@ import QRCodeGenerator from "./components/qr-code-generator"
 const App = () => {
   return (
     <div>
+      
       {/* <Accordian/>
       <MultiSelectionAccordian/> */}
 
